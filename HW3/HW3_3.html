@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            background: radial-gradient(#4562e6, #798eb4);
+        }
+        input, textarea {
+            display: block;
+            margin: 5px 0;
+        }
+        input[type=radio], input[type=checkbox] {
+            display: inline-block;
+        }
+        fieldset {
+            border: none;
+        }   
+        button {
+            margin: 5px 3px;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        <b>REGISTRATION FORM</b>
+    </h1>
+<form>
+    <fieldset>
+        <div class="name">
+            <label for="fName"><b>First Name:</b></label>
+            <input type="text" id="fName" name="fName" placeholder="Enter first name">
+            <label for="lName"><b>Last Name:</b></label>
+            <input type="text" id="lName" name="lName" placeholder="Enter last name">
+        </div>
+        <div class="loginInfo">
+            <label for="email"><b>Email:</b></label>
+            <input type="email" id="email" name="email" placeholder="Enter your email ID">
+            <label for="password"><b>Password:</b></label>
+            <input type="password" id="password" name="password" placeholder="Format(A,a-z,1-9,!@#)">
+            <label for="passwordCheck"><b>Re-enter Password:</b></label>
+            <input type="password" id="passwordCheck" name="passwordCheck" placeholder="Format(A,a-z,1-9,!@#)">
+        </div>
+        <div class="otherInfo">
+            <label for="number"><b>Mobile Number:</b></label>
+            <input type="tel" id="number" name="number" placeholder="Enter your mobile number">
+            <label for="birthday"><b>Birthday:</b></label>
+            <input type="date" id="birthday" name="birthday" value="2024-09-08">
+            <p><b>Gender:</b></p>
+            <label for="gender">&emsp;<b>Male:</b></label>
+            <input type="radio" id="male" name="gender">
+            <br>
+            <label for="gender">&emsp;<b>Female:</b></label>
+            <input type="radio" id="female" name="gender">
+            <br>
+            <br>
+            <label for="address"><b>Address:</b></label>
+            <textarea id="address" name="address" placeholder="Enter your location"></textarea>
+            <label for="photo"><b>Upload Photo:</b></label>
+            <input type="file" id="photo" name="photo">
+            <label for="photoName"><b>Photo Name:</b></label>
+            <input type="text" id="photoName" name="photoName">
+            <input type="checkbox" id ="agree" name="agree">
+            <label for="agree"><b>I agree to all terms and policies</b></label>
+        </div>
+        <div class="buttons">
+            <button type="submit">Register</button>
+            <button type="reset">Clear</button>
+        </div>
+    </fieldset>
+</form>
+
+</body>
+
+</html>

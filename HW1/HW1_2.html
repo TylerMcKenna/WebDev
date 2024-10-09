@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<head>
+    <title>Programming Inline Website</title>
+</head>
+<body>
+    <p> I'll be <span style="color:blue">showing</span> code in java to compute 5 prime numbers down from n<s></s></p>
+
+    <pre>
+    <code>
+        if (args.length < 1) {
+            System.out.println("Please enter n.");
+            return;
+        }
+        double startTime = System.nanoTime();
+
+        int userPassedValue = Integer.parseInt(args[0]);
+        // - 2 because array starts at number 2 (visually shown in docs at bottom)
+        boolean[] primeNumbers = new boolean[userPassedValue - 2];
+        for (int i = 0; i < Math.sqrt(userPassedValue) - 1; i++) {
+            int currentVal = i+2;
+            // if current index of primeNumber list is prime
+            if (!primeNumbers[i]) {
+                for (int j = currentVal*currentVal; j < userPassedValue; j+=currentVal) {
+                    primeNumbers[j-2] = true;
+                }
+            }
+
+        w// prints last 5 prime numbers under userPassedValue (n)
+        int k = 0;
+        for (int i = primeNumbers.length - 1; i > 0; i--) {
+            if (!primeNumbers[i]) {
+                System.out.println(i + 2);
+                k++;
+                if (k > 4) break;
+            }
+        }    
+    </code>
+    </pre>
+
+    <p> And here's the 5 numbers it outpus with n = 100<s></s></p>
+
+    <pre>
+    <samp>
+        97
+        89
+        83
+        79
+        73
+    </samp>
+    </pre>
+
+</body>
+</html>

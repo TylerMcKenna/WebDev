@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+</head>
+<body>
+    
+<button type="button" onclick="alert('Button clicked')">
+What's good
+</button>
+
+<label for="browser-choice">Choose a browser:</label>
+<input list="browser-list" id="browser-choice" name="browser-choice">
+
+<datalist id="browser-list">
+    <option value="Chrome"></option>
+    <option value="Firefox"></option>
+    <option value="Safari"></option>
+</datalist>
+
+<fieldset>
+    <legend>Personal Information</legend>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name">
+    <label for="age">Age:</label>
+    <input type="text" id="age" name="age">
+</fieldset>
+
+<form action="C:\Users\tyler\Desktop\School\Semester 3\Web Programming\submit.html" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name">
+    <button type="submit">Submit</button>
+</form>
+
+<label for="disk">Disk Usage:</label>
+<meter id="disk" value="70" min="0" max="100" size>70%</meter>
+
+<label for ="browsers"></label>
+<select id="browsers">
+    <option value="Chrome">Chrome</option>
+    <option value="Firefox">Firefox</option>
+    <option value="Safari">Safari</option>
+</select>
+
+<form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+    <input type="range" id="a" value="50"> +
+    <input type="number" id="b" value="50"> =
+    <output name="result" for="a b">100</output>
+</form>
+
+<label for="file">File Upload:</label>
+<progress id="file" value="32" max="100">32%</progress>
+
+<label for="comments">Comments:</label>
+<textarea id="comments">
+
+</body>
+</html>

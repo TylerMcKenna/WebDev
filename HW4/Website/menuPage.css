@@ -1,0 +1,102 @@
+body {
+    margin: 0px;
+    background-size: 100%;
+}
+
+/*header {
+}*/
+
+.topbar {
+    background-color: #e30909;
+    height: 100px;
+    display: flex;
+}
+
+.logo {
+    margin: auto;
+    padding: 15px;
+    padding-left: 60px;
+    display: flex;
+    width: 90%;
+}
+
+.logo img {
+    width: 70px;
+}
+
+.logo h1 {
+    color: white;
+    font-style: italic;
+    font-size: 14px;
+    padding-top: 18px;
+}
+
+
+.signupLogin {
+    display: flex;
+    margin-right: auto;
+    padding-right: 70px;
+    padding: 21px;
+}
+
+.signupLogin a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    padding-top: 18px;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+.divider {
+    border-right: 2px solid #ffffff;
+    height: 30px;
+    margin: auto;
+}
+
+.navbar {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    background-color: #ffffff;
+    height: 35px;
+    padding-bottom: 12px;
+}
+
+.navbar ul{
+    margin-left: 5px;
+    list-style-type: none;
+}
+
+.navbar li {
+    float: left;
+}
+
+.navbar a {
+    text-decoration: none;
+    padding-left: 30px;
+    color: #000000;
+}
+
+.galleryItem {
+    border: 1px solid #cccccc;
+    width: 250px;
+    float: left;
+    margin: 27px;
+    list-style: none;
+}
+
+.galleryItem:hover {
+    border: 1px solid #000000;
+}
+
+.galleryItem img {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.galleryItem p {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
