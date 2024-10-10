@@ -10,12 +10,12 @@
 
 
 .mainContent button {
+    border-radius: 10px;
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-top: 30px;
-    background-color: lightgreen;
-    border-radius: 10%; 
+    background-color: rgb(48, 134, 48);
     width: 7%;
     height: 5%;
     padding-bottom: 7px;
@@ -37,7 +37,7 @@
     font-size: 25px;
 }
 
-img {
+#headshot {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -47,12 +47,23 @@ img {
     height: 150px;
 }
 
-.socialIcons {
-    /*How do i get the right width to center*/
+.imageGallery {
+    display: inline-flex;
+    justify-content: right;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.imageGallery div {
+    float: right;
+}
+.imageGallery div img{
     width: 33%;
-    margin: auto;
+}
+.socialIcons {
+    text-align: center;
     margin-top: 20px;
-    /*border: 1px solid green;*/
 }
 
 .socialIcons a {
@@ -64,10 +75,15 @@ img {
     font-size: 50px;
     text-align: center;
     border-radius: 50%;
+    transition-duration: 1s;
 }
 
 .fa:hover {
-    opacity: 0.7;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 70px;
+    height: 70px;
+    font-size: 70px;
 }
 
 .fa-envelope {
