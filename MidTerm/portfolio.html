@@ -9,23 +9,34 @@
 </head>
 <body>
     <div class="mainContent">
-        <img src="./tylerHeadshot.jpg" id="headshot">
+        <img src="./myHeadshot.jpg" id="headshot">
         <h1>Tyler</h1>
-        <button>Read More</button>
+        <p id="myDescription">I'm Tyler, a programmer who's currently pursuing his Bachelors in Computer Science. 
+                              I've been programming for 5 years and am enjoying learning web development!
+        </p>
+        <button id="myButton">Read More</button>
         <h2>Highlighted Projects</h2>
-        <div class="gallery">
-            <img src="./d2lProject.png" width="400" height="300">
-            <div class="description">A d2l clone project I worked on my freshman year of college</div>
+        <div class="container">
+            <div class="gallery">
+                <a href="https://github.com/TylerMcKenna/Group-Blue-2" target="_blank">
+                    <img src="./d2lProject.png" width="400" height="300">
+                </a>
+                    <div class="description">A d2l clone project I worked on my freshman year of college</div>
+            </div>
+            <div class="gallery">
+                <a href="https://github.com/TylerMcKenna/Login-JavaFX" target="_blank">
+                    <img src="./loginProject.png" width="400" height="300">
+                </a>
+                    <div class="description">A login project I worked on my freshman year of college</div>
+            </div>
+            <div class="gallery">
+                <a href="https://github.com/Bash-the-Kernel/Golf-2" target="_blank">
+                    <img src="./golfProject.png" width="400" height="300"   >
+                </a>
+                    <div class="description">A golf game I worked on my sophomore year of college</div>
+            </div>
         </div>
-        <div class="gallery">
-            <img src="./loginProject.png" width="400" height="300">
-            <div class="description">A login projecct I worked on my freshman year of college</div>
-        </div>
-        <div class="gallery">
-            <img src="./golfProject.png" width="400" height="300"   >
-            <div class="description">A golf game I worked on my sophomore year of college</div>
-        </div>
-        <h2>Connect with me!</h2>
+        <h2 id="connectText">Connect with me!</h2>
         <div class="socialIcons">
             <!--https://github.com/Bash-the-Kernel/Golf-2  https://github.com/TylerMcKenna/Group-Blue-2  https://github.com/TylerMcKenna/Login-JavaFX-->
             <a href="mailto:jimmybob01@gmail.com" target="_blank" class="fa fa-envelope"></a>
@@ -34,5 +45,6 @@
             <a href="https://x.com/JeremyFragrance?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank" class="fa fa-twitter"></a>
         </div>
     </div>
+    <script src="./portfolio.js"></script>
 </body>
 </html>
