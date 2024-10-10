@@ -47,20 +47,22 @@
     height: 150px;
 }
 
-.imageGallery {
-    display: inline-flex;
-    justify-content: right;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+.gallery {
+    float: left;
+    margin: 60px;
+    width: auto;
+    text-align: center;
+    border: 1px solid #ccc;
+}   
+.gallery:hover {
+    border: 1px solid #777;
 }
 
-.imageGallery div {
-    float: right;
+.description {
+    padding: 15px;
+    font-size: large;
 }
-.imageGallery div img{
-    width: 33%;
-}
+
 .socialIcons {
     text-align: center;
     margin-top: 20px;
